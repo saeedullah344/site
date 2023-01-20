@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Basic template {% block title %}{% endblock title %} </title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="left">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/contact" target="_blank">Contact</a></li>
+                    <li><a href="/about" target="_blank">About</a></li>
+                    <li><a href="/blog" target="_blank">Blog</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <input type="text" placeholder="search" name="search">
+                <button>Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+{% block body %}
+
+
+{% endblock body %}
+
+
+
+
+
+<!-- ________________________footer________ -->
+    <footer>
+        <div class="footercontainer">
+            <p>Copyright 2022 all right researved</p>
+        </div>
+    </footer>
+</body>
+</html>

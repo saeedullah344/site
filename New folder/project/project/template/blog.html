@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock title %}
+
+{% block body %}
+<link rel="stylesheet" href="/static/css/blog.css">
+<div class="blogcontainer">
+    {{body}}
+    {%for n in course%}
+    <div>{{forloop.counter}}{{ n}}</div>
+    {%endfor%}
+
+     {{body}}
+    {%for d in student%}
+    <div>{{d.name}}</div>
+    <div>{{d.phone}}</div>
+    {%endfor%}
+
+
+{% for h in number %}
+ {% if h > 12 %}
+    <div>
+        {{h}}
+    </div>
+    
+    {% endif %}
+    {% endfor %}
+
+
+{% for s in formdata %}
+<div>
+    
+    {{s.name}}
+</div>
+<div>
+    
+    
+    {{s.fname}}
+</div>
+<div>
+    
+    
+    {{s.mesage}}
+</div>
+
+{% endfor %}
+
+
+</div>
+
+
+{% endblock body %}
+
+
+
+
+
+

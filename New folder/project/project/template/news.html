@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+this is news page
+
+{% endblock title %}
+
+{% block body %}
+
+{% for s in newsapp %}
+<marquee behavior="" direction="" onmouseover="stop()" onmouseout="start()">
+<div>
+   <a href="/newsid/{{newsid.id}}"> {{s.news_title}}</a>
+</div>
+<div>
+    {% comment %} {{s.news_desc | safe}} {% endcomment %}
+</div>
+</marquee>
+{% endfor %}
+
+{% endblock body %}
+
+
+
+
+

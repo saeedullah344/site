@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    cursor: pointer;
+}
+
+/* _________________navbar_____________ */
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.left ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.left ul li {
+    margin: 6px 12px;
+    padding: 6px 12px;
+}
+
+.left ul li a {
+    color: white;
+    font-size: 20px;
+}
+
+.right input {
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 20px;
+    margin: 6px 12px;
+    padding: 6px 8px;
+    outline: none;
+    cursor: text;
+}
+
+.right button {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 7px;
+    margin: 6px 6px;
+    padding: 5px 9px;
+    width: 12vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ____________________footer_________________________  */
+.footercontainer {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 12px; */
+    height: 10vh;
+
+}
+
+.footercontainer p {
+    font-size: 22px;
+    color: white;
+}
+
+.active{
+    background-color: rgb(236, 7, 7);
+}

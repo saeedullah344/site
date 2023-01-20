@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}
+papersheet page
+
+{% endblock title %}
+
+{% block body %}
+
+<form action="" method="post">
+    {% csrf_token %}
+<div class="object">
+    <div class="label">
+        <label for="obj1">maths</label>
+    </div>
+    <div class="input">
+        <input type="text" name="maths" id="obj1">
+    </div>
+    <div class="label">
+        <label for="obj2">Computer science</label>
+    </div>
+    <div class="input">
+        <input type="text" name="computer" id="obj1">
+    </div>
+    <div class="label">
+        <label for="obj3">physics</label>
+    </div>
+    <div class="input">
+        <input type="text" name="physics" id="obj1">
+    </div>
+    <div class="label">
+        <label for="obj4">Islamyat</label>
+    </div>
+    <div class="input">
+        <input type="text" name="islamyat" id="obj1">
+    </div>
+    <button type="submit">Submite</button>
+    <div class="label">
+        <label for="obj5">Percentage</label>
+    </div>
+    <div class="input">
+        <input type="text" name="per" id="obj1">
+    </div>
+    <div class="label">
+        <label for="obj4">Grade</label>
+    </div>
+    <div class="input">
+        <input type="text" name="grade" id="obj1">
+    </div>
+    
+</div>
+
+</form>
+
+
+{% endblock body %}
+
+
+
+
+

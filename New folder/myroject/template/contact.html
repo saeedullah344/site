@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{%block title %} contact {%endblock title %}
+
+{% block body %}
+<!-- _________________css______________ -->
+<style>
+.container{
+ margin-left: 25%;
+ margin-top: 3%;
+ /* background-color: brown; */
+}
+ label{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 17px 8px;
+  width: 40%;
+  /* background-color: aqua; */
+}
+
+input{
+    margin: 11px 5px;
+    padding: 8px 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    outline: none;
+    width: 60%;
+    background-color: rgb(222, 231, 231);
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+textarea{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    background-color: rgb(222, 231, 231);
+    margin: 11px 5px;
+    padding: 6px 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    outline: none;
+    width: 60%;
+}
+.submit{
+    width: 20%;
+    text-align: center;
+    margin-left: 22%;
+}
+.submit .btn{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    background-color: darkblue;
+    color: white;
+    border-radius: 12px;
+    margin: 4px 2px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+</style>
+<div class="container">
+    <form method="post" action="contact">
+        {% csrf_token %}
+        <div class="name">
+            <label for="name">Name</label>
+        </div>
+        <input type="text" name="name" placeholder="Enter Your name" id="name">
+        <div class="Email">
+            <label for="Email">Email</label>
+        </div>
+        <input type="email" name="email" placeholder="Enter Your email"
+            id="Email">
+
+
+        <div class="phone">
+            <label for="phone">Phone</label>
+        </div>
+        <input id="phone" type="number" name="phone" placeholder="Enter Your phone">
+
+        <div class="password">
+            <label for="password">Password</label>
+        </div>
+        <input id="password" type="password" name="password" placeholder="Enter password">
+            
+
+        <div class="message">
+            <label for="message">Message</label>
+        </div>
+        <textarea name="message" id="message" cols="50" rows="4"></textarea>
+
+
+        <div class="submit">
+            <button class="btn">Submite</button>
+        </div>
+    </form>
+</div>
+
+{% endblock body %}

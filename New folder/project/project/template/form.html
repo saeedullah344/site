@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<style>
+    form{
+        height: 100vh;
+        margin-top: 40px;
+    }
+</style>
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="name">
+        <label for="name">Name</label>
+        <input type="text" name="name" value="{{n12}}">
+    </div>
+    <div class="phon">
+        <label for="name">phon</label>
+        <input type="text" name="phone" value="{{n22}}">
+    </div>
+    <button type="submit">Submite</button>
+    <div class="output">
+        <input type="text" value="{{output}}">
+    </div>
+</form>
+
+
+{% endblock body %}
+
+
+

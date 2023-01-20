@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(/img/back.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.road{
+   height: 200px;
+   width: 100vw;
+   background-image: url(/img/road.jpg);
+   position: absolute;
+   left: 0;
+   bottom: 0;
+
+}
+
+.fly{
+    width: 300px;
+    position: absolute;
+    bottom: 111px;
+    right: -110px;
+  animation: fly 5s linear infinite;
+}
+@keyframes fly{
+    0%{
+     transform: translateX(0px) translateY(0px);
+    }
+    30%{
+     transform: translateX(-500px) translateY(-20px);
+    }
+    100%{
+     transform: translateX(-1800px) translateY(-400px);
+    }
+}

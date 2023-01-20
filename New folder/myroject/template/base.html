@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {%block title%} {%endblock title%}/Django project</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+             position: fixed; 
+            height: 50px;
+            width: 100vw;
+            margin-bottom: 12px;
+
+        }
+        #container ul{
+            display: flex;
+            gap: 6rem;
+        }
+        ul li {
+            list-style: none;
+        }
+        ul li a{
+            text-decoration:none ;
+            color: white;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .left img{
+            border: none;
+            border-radius: 50%;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+
+   <nav id="container" class="navcontainer">
+    <div class="left">
+        <a href=""><h1>SAEED</h1></a>
+        <a href="index.html"><img src="/static/img/chris-turgeon-9wqRZsdiIAI-unsplash.png" alt="" width="50px"></a>
+    </div>
+    <div class="mid">
+        <ul>
+            <li><a href="index" target="_blank">Home</a></li>
+            <li><a href="contact" target="_blank">Contact</a></li>
+            <li><a href="about" target="_blank">About</a></li>
+            <li><a href="blog" target="_blank">Blog</a></li>
+        </ul>
+    </div>
+    <div class="right"></div>
+   </nav>
+    {% block body %}
+    
+    {% endblock body %}
+
+
+      
+    
+
+</body>
+</html>

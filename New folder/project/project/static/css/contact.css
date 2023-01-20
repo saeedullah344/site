@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/static/img/2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.contactcontainer {
+    height: 100%;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    top: 52px;
+    position: relative;
+    justify-content: center;
+}
+
+.name .label {
+    width: 20%;
+    /* background-color: blue; */
+}
+
+.label label {
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    padding: 10px 12px;
+    margin: 10px 20px;
+
+}
+
+.name .input {
+    width: 40%;
+    right: 3%;
+    /* background-color: aqua; */
+}
+
+.input input {
+    border: 1px solid gray;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 22px;
+    background-color: darksalmon;
+    color: white;
+    outline: none;
+    padding: 10px 12px;
+    margin: 10px 20px;
+}
+
+.input textarea {
+    border: 1px solid gray;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 22px;
+    background-color: darksalmon;
+    /* background-color: black; */
+    color: white;
+    outline: none;
+    padding: 10px 12px;
+    margin: 10px 20px;
+}
+
+.submit button {
+    background-color: crimson;
+    color: white;
+    width: 10%;
+    font-size: 22px;
+    margin: 12px 3px;
+    padding: 6px 12px;
+    border: 2px solid gray ;
+    border-radius: 10px;
+    cursor: pointer;
+}
